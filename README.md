@@ -1,20 +1,22 @@
-# Django File Upload Tutorial
+# Web App to Encrypt and Decrypt RSA codes
 
-[![Python Version](https://img.shields.io/badge/python-3.7-brightgreen.svg)](https://python.org)
-[![Django Version](https://img.shields.io/badge/django-2.1-brightgreen.svg)](https://djangoproject.com)
+[![Python Version](https://img.shields.io/badge/python-3.9.15-brightgreen.svg)](https://python.org)
+[![Django Version](https://img.shields.io/badge/django-3.2.5-brightgreen.svg)](https://djangoproject.com)
 
-Code example used in the tutorial series on Django File Upload.
+The following web-app aims to encrypt and decrypt files using the RSA crypto-system.
 
-Watch it on YouTube: [Django 2.1 File Upload](https://www.youtube.com/playlist?list=PLLxk3TkuAYnpm24Ma1XenNeq1oxxRcYFT)
+## To encrypt a message code, one can:
+Go to Encrypt. Upload the message code as a .txt file and press Encrypt. The application will encrypt the file, providing with a download link to the encrypted file. The key information will be displayed once the file is encrypted.
 
-Subscribe to my YouTube channel: [youtube.com/VitorFreitas](https://www.youtube.com/VitorFreitas?sub_confirmation=1)
+## To decrypt a ciphertext, one can:
+Go to Decrypt. Upload the code as a .txt file, enter the public key and private key, and press Decrypt. The application will decrypt the file, providing with a download link to the decrypted file.
 
 ## Running the Project Locally
 
 First, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/sibtc/django-upload-example.git
+git clone https://github.com/jdhruva/
 ```
 
 Install the requirements:
@@ -37,7 +39,3 @@ python manage.py runserver
 
 The project will be available at **127.0.0.1:8000**.
 
-
-## License
-
-The source code is released under the [MIT License](https://github.com/sibtc/django-upload-example/blob/master/LICENSE).
