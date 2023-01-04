@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Upload</h2>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="document">
+    <button type="submit">Encrypt file</button>
+  </form>
+
+  {% if error %}
+  <br>
+  <div class="alert alert-primary" role="alert">
+    Please upload a file first.
+  </div>
+  {% endif %}
+
+  {% if url %}
+    <h3>Encrpyted File:</h3> <p><a href="{{ url }}" download> Download </a></p>
+    
+    <h3> Key Information </h3>
+    <p> n = {{n}} </p> <p> e = {{e}}</p>
+    <p> p = {{p}} </p> <p> q = {{q}}</p>
+    <p> d = {{d}} </p>
+
+  {% endif %}
+{% endblock %}

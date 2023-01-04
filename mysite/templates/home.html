@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Web App to Encrypt and Decrypt RSA codes</h2>
+  <p class="card-text">Built Using Django 3.2.5 / Python 3.9.15</p>
+  <p class="card-text">
+    The following web-app aims to encrypt and decrypt files using the RSA crypto-system.
+  </p>
+  <h3>To encrypt a message code, one can:</h3>
+  <p class="card-text">
+    <ul>
+      <li>Go to <a href="{% url 'encrypt' %}">Encrypt</a>. Upload the message code as a .txt file and press Encrypt. The application will encrypt the file, providing with a download link to the encrypted file. The key information will be displayed once the file is encrypted.</li>
+    </ul>
+  </p>
+  <h3>To decrypt a ciphertext, one can:</h3>
+  <p class="card-text">
+    <ul>
+      <li>Go to <a href="{% url 'decrypt' %}">Decrypt</a>. Upload the code as a .txt file, enter the public key and private key, and press Decrypt. The application will decrypt the file, providing with a download link to the decrypted file.</li>
+    </ul>
+  </p>
+{% endblock %}
