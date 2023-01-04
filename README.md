@@ -16,7 +16,7 @@ Go to Decrypt. Upload the code as a .txt file, enter the public key and private 
 First, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/jdhruva/
+git clone https://github.com/jdhruva03/fsRSA.git
 ```
 
 Install the requirements:
@@ -39,3 +39,6 @@ python manage.py runserver
 
 The project will be available at **127.0.0.1:8000**.
 
+## License
+
+The source code is released under the [MIT License](https://github.com/jdhruva03/fsRSA/blob/master/LICENSE).
